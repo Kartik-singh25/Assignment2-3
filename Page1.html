@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of CODE Element</title>
+   
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style> body{
+        background-color: blanchedalmond;
+        font-style: normal;
+        font-family: Georgia;
+        font-size: 20px;
+        margin: 20px 20px 20px 20px;
+    }
+    code {
+  font-family: monospace;
+}
+.column
+{
+    color: chocolate;
+}
+.bt
+{
+    margin-left: 45%;
+}
+a:hover
+{
+    text-decoration: none;
+    color: brown;
+}
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+    <h1>4 Programming Languages </h1></div>
+    <div><ol>
+        <li>C Programming</li>
+        <li>C++ Programming</li>
+        <li>Python Programming</li>
+        <li>Java Programming</li>
+    </ol></div>
+    <hr><hr>
+
+<!-- C Programming Div-->
+
+
+
+<div>
+    <article>
+        <h3 style="text-decoration: underline;"><em>C Programming</em></h3>
+<p> C programming language is a MUST for students and working professionals to become a great Software 
+    Engineer specially when they are working in Software Development Domain. I will list down some of the
+     key advantages of learning C Programming:</p>
+     <ul>
+<li>Easy to learn</li>
+
+<li>Structured language</li>
+
+<li>It produces efficient programs</li>
+
+<li>It can handle low-level activities</li>
+
+<li>It can be compiled on a variety of computer platforms</li>
+</ul>
+    </article>
+<h4>C Program to check Armstrong number</h4>
+<code>
+    #include&lt;stdio.h&gt;<br>
+        int main()<br>
+        {<br>
+        int num,copy_of_num,sum=0,rem;&nbsp;&nbsp;&nbsp;
+        
+           //Store input number in variable num<br>
+        printf("\nEnter a number:");<br>
+        scanf("%d",&num);<br><br>
+        
+        /* Value of variable num would change in the<br>
+        below while loop so we are storing it in <br>
+        another variable to compare the results <br>
+        at the end of program<br>
+           */<br><br>
+
+        copy_of_num = num;<br><br><br>
+        
+        /* We are adding cubes of every digit<br>
+            * and storing the sum in variable sum<br>
+            */ <br><br><br>
+        while (num != 0)<br>
+        {<br>
+            rem = num % 10;<br>
+            sum = sum + (rem*rem*rem);<br>
+            num = num / 10;<br>
+        }<br><br><br>
+        
+        /* If sum of cubes of every digit is equal to number<br>
+            * itself then the number is Armstrong<br>
+            */<br><br><br>
+        if(copy_of_num == sum)<br>
+        &nbsp;&nbsp;&nbsp;printf("\n%d is an Armstrong Number",copy_of_num);<br>
+        else<br>
+        &nbsp;&nbsp;&nbsp;printf("\n%d is not an Armstrong Number",copy_of_num);<br>
+        return(0);<br>
+        }
+        <br><br>
+
+
+        <div class="row" style="color:black">
+            <div class="col">
+                <div><h5>INPUT :-</h5></div>
+                <div>370</div>
+            </div>
+            <div class="col">
+                <div><h5>OUTPUT :-</h5></div>
+                <div>Enter a number: 370<br>
+                    370 is an Armstrong Number</div>
+            </div>
+        </div>
+</code>
+</div>
+
+<!-- C Programming End-->
+<hr>
+<hr>
+
+
+<!-- C++ Programming -->
+
+
+
+
+<div>
+    <article>
+        <h3 style="text-decoration: underline;"><em>C++ Programming</em></h3>
+<p> C++ language is a direct descendant of C programming language with additional
+    features such as type checking, object oriented programming, exception handling etc.
+    You can call it a “better C”. It was developed by Bjarne Stroustrup.
+    C++ is a general purpose language language, when I say general purpose it simply means that 
+    it is designed to be used for developing application.</p>
+
+    <h4>Features of C++</h4>
+    <ol>
+<li>Better memory management – you can dynamically allocate memory during runtime using new and 
+    delete operator in C++ to have better memory management.</li>
+
+<li>Object oriented – C++ supports object oriented programming features, which means we can use the 
+    popular OOPs concepts such as Abstraction, Inheritance, Encapsulation and Inheritance in C++ programs, 
+    these features make writing code in C++ a lot easier. 
+    We will cover them in detail in this tutorial series.</li>
+
+<li> Portable – Most of C++ compilers supports ANSI standards that makes C++ portable because the code you 
+    write on one operating system can be run on other Operating system without making any change. We cannot 
+    say C++ a fully platform independent language as certain things in C++ are not portable, 
+    such as drawing graphics on a screen, since standard C++ has no graphics or GUI API.</li>
+
+<li> Structured programming language – We have functions in C++, which makes easier to break a problem into small 
+    blocks of code and structure the program in such a way so that it improves readability and reusability.</li>
+
+<li>Exception handling: Just like Java we can do exception handling in C++ which makes it easier to identify and handle 
+    the exceptions.</li>
+</ol>
+    </article>
+<h4> C++ Program to Caluclate Sum of Natural Numbers using loop</h4>
+<code>
+    #include &lt;iostream&gt;<br>
+        using namespace std;<br>
+        
+        int main()<br>
+        {<br>
+            int n, sum = 0;<br>
+        
+            cout &lt;&lt; "Enter a positive integer: ";<br>
+            cin >> n;<br>
+        
+            for (int i = 1; i &lt;= n; ++i) <br>{<br>
+                sum += i;<br>
+            }<br>
+            cout &lt;&lt; "Sum = " &lt;&lt; sum;<br>
+            return 0;<br>
+        }<br>
+        <br><br>
+
+
+        <div class="row" style="color:black">
+            <div class="col">
+                <div><h5>INPUT :-</h5></div>
+                <div>50</div>
+            </div>
+            <div class="col">
+                <div><h5>OUTPUT :-</h5></div>
+                <div>Enter a positive integer: 50<br>
+                    Sum = 1275</div>
+            </div>
+        </div>
+</code>
+</div>
+
+
+
+
+<!-- C++ Programming End-->
+
+<hr><hr>
+
+<!--Python Programming-->
+
+
+
+
+
+
+
+
+<div>
+    <article>
+        <h3 style="text-decoration: underline;"><em>Python Programming</em></h3>
+<p> Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+    It is used for:
+    </p>
+    <ul>
+<li>Web development (server-side)</li>
+
+<li>Software development</li>
+
+<li>Mathematics</li>
+
+<li>System scripting</li>
+</ul>
+
+<p>
+    Why Python?</p>
+    <ul>
+<li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+<li>Python has a simple syntax similar to the English language.</li>
+<li>Python has syntax that allows developers to write programs with fewer lines than some other programming 
+languages.</li>
+<li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. 
+This means that prototyping can be very quick.</li>
+<li>Python can be treated in a procedural way, an object-oriented way or a functional way.</li>
+</ul>
+    </article>
+<h4>Python Program to Print the Fibonacci sequence</h4>
+<code>
+    # Program to display the Fibonacci sequence up to n-th term
+
+nterms = int(input("How many terms? "))<br><br>
+
+# first two terms<br>
+n1, n2 = 0, 1<br>
+count = 0<br><br>
+
+# check if the number of terms is valid<br>
+if nterms &lt;= 0:<br>
+&nbsp;&nbsp;print("Please enter a positive integer")<br>
+elif nterms == 1:<br>
+&nbsp;&nbsp;print("Fibonacci sequence upto",nterms,":")<br>
+&nbsp;&nbsp;print(n1)<br>
+else:<br>
+&nbsp;&nbsp;print("Fibonacci sequence:")<br>
+&nbsp;&nbsp;while count &lt; nterms:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;print(n1)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;nth = n1 + n2<br>
+&nbsp;&nbsp;&nbsp;&nbsp;# update values<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n1 = n2<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n2 = nth<br>
+&nbsp;&nbsp;&nbsp;&nbsp;count += 1<br>
+        <br><br>
+
+
+        <div class="row" style="color:black">
+            <div class="col">
+                <div><h5>INPUT :-</h5></div>
+                <div>7</div>
+            </div>
+            <div class="col">
+                <div><h5>OUTPUT :-</h5></div>
+                <div>How many terms? 7<br>
+                    Fibonacci sequence:<br>
+                    0<br>
+                    1<br>
+                    1<br>
+                    2<br>
+                    3<br>
+                    5</div>
+            </div>
+        </div>
+</code>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--Python Programming End-->
+
+<hr><hr>
+
+
+
+<!--Java Programming-->
+
+
+
+
+
+
+<div>
+    <article>
+        <h3 style="text-decoration: underline;"><em>Java Programming</em></h3>
+<p> JAVA was developed by Sun Microsystems Inc in 1991, later acquired by Oracle Corporation. It was developed 
+    by James Gosling and Patrick Naughton. It is a simple programming language.  
+    Writing, compiling and debugging a program is easy in java.  It helps to create modular programs and reusable code.
+</p>
+
+    <h4>Java Terminology</h4>
+    <ol>
+<li><b>Java Virtual Machine (JVM) :- </b>
+    This is generally referred as JVM. Before, we discuss about JVM lets see the phases of program execution. Phases are as follows: we write the program, then we compile the program and at last we run the program.
+    <br>1) Writing of the program is of course done by java programmer like you and me.
+    <br>2) Compilation of program is done by javac compiler, javac is the primary java compiler included in java development kit (JDK). It takes java program as input and generates java bytecode as output.
+    <br>3) In third phase, JVM executes the bytecode generated by compiler. This is called program run phase.
+    
+    So, now that we understood that the primary function of JVM is to execute the bytecode produced by compiler. Each operating system has different JVM, however the output they produce 
+    after execution of bytecode is same across all operating systems. That is why we call java as platform
+    independent language.</li>
+
+<li><b>Java Development Kit(JDK) :- </b>
+    While explaining JVM and bytecode, I have used the term JDK. Let’s discuss about it. As the name suggests this is complete java development kit that includes JRE (Java Runtime Environment), compilers and various tools like JavaDoc, Java debugger etc.
+    In order to create, compile and run Java program you would need JDK installed on your computer.</li>
+
+<li><b>Java Runtime Environment(JRE) :- </b>
+    JRE is a part of JDK which means that JDK includes JRE. When you have JRE installed on your system, you can run a 
+    java program however you won’t be able to compile it. JRE includes JVM, 
+    browser plugins and applets support. When you only need to run a java program on your computer, you would only 
+    need JRE.</li>
+
+</ol>
+    </article>
+<h4> Java Program to Check Prime Number using a for loop</h4>
+<code>
+    public class Main <br>{
+<br>
+&nbsp;&nbsp;&nbsp;public static void main(String[] args)<br> &nbsp;&nbsp;&nbsp;{<br>
+    
+            &nbsp;&nbsp;&nbsp;int num = 29;<br>
+            &nbsp;&nbsp;&nbsp;boolean flag = false;<br>
+            &nbsp;&nbsp;&nbsp;for(int i = 2; i &lt;= num/2; ++i)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                &nbsp;&nbsp;&nbsp;// condition for nonprime number<br>
+                &nbsp;&nbsp;&nbsp;if(num % i == 0)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flag = true;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    &nbsp;&nbsp;&nbsp;}<br>
+    
+            &nbsp;&nbsp;&nbsp;if (!flag)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(num + " is a prime number.");<br>
+            &nbsp;&nbsp;&nbsp;else
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(num + " is not a prime number.");<br>
+            &nbsp;&nbsp;&nbsp;}<br>
+    }<br>
+        <br><br>
+
+
+        <div class="row" style="color:black">
+            <div class="col">
+                <div><h5>INPUT :-</h5></div>
+                <div>29</div>
+            </div>
+            <div class="col">
+                <div><h5>OUTPUT :-</h5></div>
+                <div>29 is a prime number.</div>
+            </div>
+        </div>
+</code>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Java Programming End-->
+
+<hr>
+<button class="bt"><a href="index.html">Back to Home Page</a></button>
+<hr>
+
+</body>
+</html>
